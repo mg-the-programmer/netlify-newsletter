@@ -22,7 +22,7 @@ router.get("/", function (req, res) {
   res.sendFile(__dirname + "/signUp.html");
 });
 
-app.use("/", router); // path must route to lambda
+app.use("/.netlify/functions/api", router); // path must route to lambda
 
 app.post("/", async function (req, res) {
   const { userName, userMail } = req.body;

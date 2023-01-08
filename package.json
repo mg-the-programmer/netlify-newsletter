@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "netlify-lambda serve /",
+    "build": "netlify-lambda build /"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +14,7 @@
     "@mailchimp/mailchimp_marketing": "^3.0.80",
     "body-parser": "^1.20.1",
     "express": "^4.18.2",
+    "netlify": "^13.1.0",
     "netlify-lambda": "^2.0.15",
     "request": "^2.88.2",
     "serverless-http": "^3.1.1"
